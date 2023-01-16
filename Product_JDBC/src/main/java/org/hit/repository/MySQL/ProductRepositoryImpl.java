@@ -15,8 +15,8 @@ public class ProductRepositoryImpl implements ProductRepository {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url="jdbc:mysql://localhost:3306/product";
-            String username="root";
-            String password="ashu0453";
+            String username="******"; //set your own username
+            String password="******"; //set your own password
             connection= DriverManager.getConnection(url,username,password);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
